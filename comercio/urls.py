@@ -17,8 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# esto es para que se muestren los archivos estaticos
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns 
+
 # de la carpeta "producto", acceder al archivo "urls.py"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('productos/', include('producto.urls')),
 ]
+
+# esto es para que se muestren los archivos estaticos
+urlpatterns += staticfiles_urlpatterns() 
