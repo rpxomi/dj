@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zr8h0zfr1#!(-^z0t-juc$4v7wjo_gh!mif!06-ih$r+*wc@$^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dj-2uek.onrender.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -108,10 +108,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-STATIC_URL = 'static/' # no olvidar agregar la barra al final
 
-STATICFILES_DIRS = [BASE_DIR / "static"] # no olvidar crear la carpeta "static" en la raiz del proyecto
-STATIC_ROOT = BASE_DIR / "staticfiles" # no olvidar crear la carpeta "staticfiles" en la raiz del proyecto
+# no olvidar agregar la barra al final
+STATIC_URL = 'static/'
+
+# no olvidar crear la carpeta "static" en la raiz del proyecto
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
+# no olvidar crear la carpeta "staticfiles" en la raiz del proyecto
+STATIC_ROOT = BASE_DIR / "staticfiles" 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
