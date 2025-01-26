@@ -1,3 +1,2 @@
 # dj
-
-retorna una vista HTML
+Django sin API REST retornando una plantilla HTML como vista
